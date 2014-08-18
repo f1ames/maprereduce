@@ -1,0 +1,1 @@
+## maprereduce.js [![Build Status](https://travis-ci.org/f1ames/maprereduce.svg?branch=master)](https://travis-ci.org/f1ames/maprereduce)

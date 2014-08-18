@@ -2,7 +2,7 @@
 
 (function(context) {
     
-    var MapReduce = function(mapFn, reduceFn, rereduceFn, initialResult) {
+    var MapReReduce = function(mapFn, reduceFn, rereduceFn, initialResult) {
         if(!(mapFn instanceof Function)) {
             throw new Error('mapFn should be a function, e.g. function(key, value) {...}');
         }
@@ -22,7 +22,7 @@
         this.rereduceFn = rereduceFn;
     };
     
-    MapReduce.prototype = {
+    MapReReduce.prototype = {
         feed: function(input) {
             var self = this;
             this.tmp = {};
@@ -61,14 +61,14 @@
     };
     
     if(module && module.exports) {
-        module.exports = MapReduce;
+        module.exports = MapReReduce;
     }
     else if(define) {
-        define('MapReduce', function() {
-            return MapReduce;
+        define('MapReReduce', function() {
+            return MapReReduce;
         });
     }
     else {
-        context.MapReduce = MapReduce;
+        context.MapReReduce = MapReReduce;
     }    
 })(this);

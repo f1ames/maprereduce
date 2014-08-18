@@ -31,7 +31,7 @@ To feed maprereduce with data, use:
     
     mr.feed(data); // data is Array
     
-And to ger results (at any time), use:
+And to get results (at any time), use:
     
     var result = mr.result;
     

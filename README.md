@@ -31,7 +31,15 @@ To feed maprereduce with data, use:
     
     mr.feed(data); // data is Array
     
+And to ger results (at any time), use:
+    
+    var result = mr.result;
+    
 Filtering values
 ---
 
-Normally the value returned by map function is used as a key in resulting object. If the returned value is === undefined or null, the key and all releated values will be filtered and will not occur in resulting object.
+Normally the value returned by map function is used as a key in resulting object. If the returned value is === undefined or null, the key and all releated values will be filtered and will not occur in resulting object, e.g.
+
+    var map = function(item) {
+        return item.length > 2 ? item.length : null; // So all items shorter than 3 will be filtered
+    }

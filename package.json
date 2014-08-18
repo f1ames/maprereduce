@@ -11,6 +11,10 @@
   "scripts": {
     "test": "mocha"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/f1ames/maprereduce.git"
+  },
   "keywords": [
     "js",
     "node",

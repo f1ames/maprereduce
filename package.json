@@ -9,6 +9,7 @@
     "test": "test"
   },
   "scripts": {
+    "pretest": "grunt build",
     "test": "mocha"
   },
   "repository": {

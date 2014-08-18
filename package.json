@@ -1,0 +1,27 @@
+{
+  "name": "maprereduce",
+  "version": "0.0.1",
+  "description": "Simple mapreduce algorithm implementation with additional rereduce step",
+  "main": "release/maprereduce.min.js",
+  "directories": {
+    "release": "release",
+    "src": "src",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "js",
+    "node",
+    "npm",
+    "mapreduce"
+  ],
+  "author": "f1ames",
+  "license": "GPL v2",
+  "devDependencies": {
+    "grunt": "",
+    "grunt-contrib-uglify": "^0.5.1",
+    "mocha": ""
+  }
+}
